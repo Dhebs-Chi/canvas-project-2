@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shape Drawing with Grid Alignment</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="controls">
+    <label for="shape">Select Shape: </label>
+    <select id="shape">
+      <option value="rectangle">Rectangle</option>
+      <option value="pentagon">Pentagon</option>
+      <option value="hexagon">Hexagon</option>
+      <option value="heptagon">Heptagon</option>
+      <option value="octagon">Octagon</option>
+      <option value="nonagon">Nonagon</option>
+      <option value="decagon">Decagon</option>
+    </select>
+
+    <label for="color">Fill Color: </label>
+    <input type="color" id="color" value="#ff0000">
+
+    <label for="strokeColor">Stroke Color: </label>
+    <input type="color" id="strokeColor" value="#000000">
+
+    <label for="strokeWidth">Stroke Width: </label>
+    <input type="number" id="strokeWidth" value="2" min="1" max="10">
+
+    <label for="gridSize">Grid Size: </label>
+    <input type="number" id="gridSize" value="20" min="5" max="100">
+
+    <button id="saveCanvas">Save Canvas</button>
+  </div>
+
+  <canvas id="drawingCanvas" width="800" height="600"></canvas>
+  <script src="app.js"></script>
+
+</body>
+</html>
